@@ -1,17 +1,18 @@
-package com.fanjun.keeplive;
+package com.im.keeplive;
 
 import android.app.ActivityManager;
 import android.app.Application;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
-import android.support.annotation.NonNull;
 
-import com.fanjun.keeplive.config.ForegroundNotification;
-import com.fanjun.keeplive.config.KeepLiveService;
-import com.fanjun.keeplive.service.JobHandlerService;
-import com.fanjun.keeplive.service.LocalService;
-import com.fanjun.keeplive.service.RemoteService;
+import androidx.annotation.NonNull;
+
+import com.im.keeplive.config.ForegroundNotification;
+import com.im.keeplive.config.KeepLiveService;
+import com.im.keeplive.service.JobHandlerService;
+import com.im.keeplive.service.LocalService;
+import com.im.keeplive.service.RemoteService;
 
 import java.util.List;
 

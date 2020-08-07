@@ -1,4 +1,4 @@
-package com.fanjun.keeplive.receiver;
+package com.im.keeplive.receiver;
 
 import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
@@ -6,7 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Looper;
 
-import com.fanjun.keeplive.activity.OnePixelActivity;
+import com.im.keeplive.activity.OnePixelActivity;
 
 public final class OnepxReceiver extends BroadcastReceiver {
     android.os.Handler mHander;

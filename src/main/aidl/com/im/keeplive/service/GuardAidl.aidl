@@ -1,4 +1,4 @@
-package com.fanjun.keeplive.service;
+package com.im.keeplive.service;
 
 interface GuardAidl {
     //相互唤醒服务

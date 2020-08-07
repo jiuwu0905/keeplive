@@ -1,4 +1,4 @@
-package com.fanjun.keeplive.service;
+package com.im.keeplive.service;
 
 import android.app.Notification;
 import android.app.Service;
@@ -11,9 +11,9 @@ import android.os.IBinder;
 import android.os.PowerManager;
 import android.os.RemoteException;
 
-import com.fanjun.keeplive.config.NotificationUtils;
-import com.fanjun.keeplive.receiver.NotificationClickReceiver;
-import com.fanjun.keeplive.utils.ServiceUtils;
+import com.im.keeplive.config.NotificationUtils;
+import com.im.keeplive.receiver.NotificationClickReceiver;
+import com.im.keeplive.utils.ServiceUtils;
 
 /**
  * 守护进程

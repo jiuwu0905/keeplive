@@ -1,6 +1,4 @@
-package com.fanjun.keeplive.config;
-
-import android.content.Context;
+package com.im.keeplive.config;
 
 /**
  * 需要保活的服务

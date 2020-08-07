@@ -1,4 +1,4 @@
-package com.fanjun.keeplive.config;
+package com.im.keeplive.config;
 
 import android.content.Context;
 import android.content.Intent;

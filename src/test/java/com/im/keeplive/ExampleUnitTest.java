@@ -1,4 +1,4 @@
-package com.fanjun.keeplive;
+package com.im.keeplive;
 
 import org.junit.Test;
 

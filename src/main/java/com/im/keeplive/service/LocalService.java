@@ -1,4 +1,4 @@
-package com.fanjun.keeplive.service;
+package com.im.keeplive.service;
 
 import android.app.Notification;
 import android.app.Service;
@@ -15,12 +15,12 @@ import android.os.IBinder;
 import android.os.PowerManager;
 import android.os.RemoteException;
 
-import com.fanjun.keeplive.KeepLive;
-import com.fanjun.keeplive.R;
-import com.fanjun.keeplive.config.NotificationUtils;
-import com.fanjun.keeplive.receiver.NotificationClickReceiver;
-import com.fanjun.keeplive.receiver.OnepxReceiver;
-import com.fanjun.keeplive.utils.ServiceUtils;
+import com.im.keeplive.KeepLive;
+import com.im.keeplive.R;
+import com.im.keeplive.config.NotificationUtils;
+import com.im.keeplive.receiver.NotificationClickReceiver;
+import com.im.keeplive.receiver.OnepxReceiver;
+import com.im.keeplive.utils.ServiceUtils;
 
 public final class LocalService extends Service {
     private OnepxReceiver mOnepxReceiver;
@@ -169,7 +169,7 @@ public final class LocalService extends Service {
 
         @Override
         public void onServiceDisconnected(ComponentName name) {
-            if (ServiceUtils.isServiceRunning(getApplicationContext(), "com.fanjun.keeplive.service.LocalService")){
+            if (ServiceUtils.isServiceRunning(getApplicationContext(), "com.im.keeplive.service.LocalService")){
                 Intent remoteService = new Intent(LocalService.this,
                         RemoteService.class);
                 LocalService.this.startService(remoteService);

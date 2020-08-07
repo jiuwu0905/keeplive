@@ -1,4 +1,4 @@
-package com.fanjun.keeplive.utils;
+package com.im.keeplive.utils;
 
 import android.app.ActivityManager;
 import android.content.Context;

@@ -1,10 +1,10 @@
-package com.fanjun.keeplive.receiver;
+package com.im.keeplive.receiver;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
-import com.fanjun.keeplive.KeepLive;
+import com.im.keeplive.KeepLive;
 
 public final class NotificationClickReceiver extends BroadcastReceiver {
     public final static String CLICK_NOTIFICATION = "CLICK_NOTIFICATION";

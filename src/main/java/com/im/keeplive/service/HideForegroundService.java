@@ -1,15 +1,14 @@
-package com.fanjun.keeplive.service;
+package com.im.keeplive.service;
 
 import android.app.Notification;
 import android.app.Service;
 import android.content.Intent;
 import android.os.Handler;
 import android.os.IBinder;
-import android.support.annotation.MainThread;
 
-import com.fanjun.keeplive.KeepLive;
-import com.fanjun.keeplive.config.NotificationUtils;
-import com.fanjun.keeplive.receiver.NotificationClickReceiver;
+import com.im.keeplive.KeepLive;
+import com.im.keeplive.config.NotificationUtils;
+import com.im.keeplive.receiver.NotificationClickReceiver;
 
 /**
  * 隐藏前台服务通知

@@ -1,4 +1,4 @@
-package com.fanjun.keeplive.service;
+package com.im.keeplive.service;
 
 import android.app.Notification;
 import android.app.job.JobInfo;
@@ -9,13 +9,14 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
-import android.support.annotation.RequiresApi;
 
 
-import com.fanjun.keeplive.KeepLive;
-import com.fanjun.keeplive.config.NotificationUtils;
-import com.fanjun.keeplive.receiver.NotificationClickReceiver;
-import com.fanjun.keeplive.utils.ServiceUtils;
+import androidx.annotation.RequiresApi;
+
+import com.im.keeplive.KeepLive;
+import com.im.keeplive.config.NotificationUtils;
+import com.im.keeplive.receiver.NotificationClickReceiver;
+import com.im.keeplive.utils.ServiceUtils;
 
 /**
  * 定时器
@@ -80,7 +81,7 @@ public final class JobHandlerService extends JobService {
 
     @Override
     public boolean onStartJob(JobParameters jobParameters) {
-        if (!ServiceUtils.isServiceRunning(getApplicationContext(), "com.fanjun.keeplive.service.LocalService") || !ServiceUtils.isRunningTaskExist(getApplicationContext(), getPackageName() + ":remote")) {
+        if (!ServiceUtils.isServiceRunning(getApplicationContext(), "com.im.keeplive.service.LocalService") || !ServiceUtils.isRunningTaskExist(getApplicationContext(), getPackageName() + ":remote")) {
             startService(this);
         }
         return false;
@@ -88,7 +89,7 @@ public final class JobHandlerService extends JobService {
 
     @Override
     public boolean onStopJob(JobParameters jobParameters) {
-        if (!ServiceUtils.isServiceRunning(getApplicationContext(), "com.fanjun.keeplive.service.LocalService") || !ServiceUtils.isRunningTaskExist(getApplicationContext(), getPackageName() + ":remote")) {
+        if (!ServiceUtils.isServiceRunning(getApplicationContext(), "com.im.keeplive.service.LocalService") || !ServiceUtils.isRunningTaskExist(getApplicationContext(), getPackageName() + ":remote")) {
             startService(this);
         }
         return false;
